@@ -227,7 +227,7 @@ fieldset {
   block-size: 19px;
   margin-right: 5px;
   border: 1px solid #fff;
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 .search-form__label:has(.search-form__checkbox) {
