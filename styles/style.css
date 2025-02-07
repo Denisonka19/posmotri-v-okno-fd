@@ -38,7 +38,7 @@ html {
  "result content__details";
  justify-content: center;
  align-content: end;
- max-width: 1140px;
+ inline-size: 1140px;
  gap: 30px;
 }
 
@@ -51,7 +51,6 @@ html {
   position: relative;
   height: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
   margin-top: 24px;
 }
 
@@ -73,7 +72,7 @@ html {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-block-end: 16px;
 }
 
 .result__video {
@@ -107,7 +106,8 @@ html {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  width: 196px;
+  max-width: 196px;
+  width: 100%;
 }
 
 .search-form__fieldset-title {
@@ -177,7 +177,7 @@ fieldset {
 
 .search-form__textfield {
   width: 225px;
-  height: 27px;
+  min-height: 27px;
   background-color: transparent;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
@@ -245,10 +245,6 @@ fieldset {
   outline: transparent;
 }
 
-.search-form__checkbox:has(:focus-visible) {
-  outline: 1px solid #fff;
-}
-
 .search-form__label:has(.search-form__checkbox):hover {
   text-decoration: underline;
 }
@@ -264,17 +260,16 @@ fieldset {
   border: 1px solid #fff;
   background-color: transparent;
   cursor: pointer;
+  height: 34px;
 }
 
 .search-form__submit-button {
   align-self: end;
   width: 194px;
-  height: 34px;
 }
 
 .more-button {
   width: 100%;
-  height: 34px;
   margin-top: 30px;
 }
 
@@ -307,12 +302,6 @@ fieldset {
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
 }
-
-.preloader {
-  overflow-y: hidden;
-}
-
-
 
 h1,
 h2,
